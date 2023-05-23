@@ -1,0 +1,53 @@
+
+Certainly! Here are some useful and common methods for Python Selenium, a popular library for automating web browsers:
+
+Driver Initialization:
+
+webdriver.Chrome() - Initialize Chrome driver.
+webdriver.Firefox() - Initialize Firefox driver.
+webdriver.Edge() - Initialize Microsoft Edge driver.
+webdriver.Safari() - Initialize Safari driver.
+webdriver.Ie() - Initialize Internet Explorer driver.
+Navigation:
+
+get(url) - Load a web page.
+back() - Go back to the previous page.
+forward() - Go forward to the next page.
+refresh() - Refresh the current page.
+Finding Elements:
+
+find_element_by_id(id) - Find element by ID.
+find_element_by_name(name) - Find element by name.
+find_element_by_class_name(class_name) - Find element by class name.
+find_element_by_xpath(xpath) - Find element by XPath.
+find_element_by_css_selector(css_selector) - Find element by CSS selector.
+find_element_by_link_text(link_text) - Find element by link text.
+find_element_by_partial_link_text(partial_link_text) - Find element by partial link text.
+find_element_by_tag_name(tag_name) - Find element by tag name.
+Interacting with Elements:
+
+click() - Click on an element.
+send_keys(*value) - Type text into an input field.
+clear() - Clear the text of an input field.
+submit() - Submit a form.
+get_attribute(name) - Get the value of an attribute.
+text - Get the text of an element.
+is_displayed() - Check if an element is displayed.
+is_enabled() - Check if an element is enabled.
+is_selected() - Check if a checkbox or radio button is selected.
+Waits:
+
+implicitly_wait(time_to_wait) - Set a default waiting time for elements to appear.
+WebDriverWait(driver, timeout).until(EC.condition) - Explicitly wait for a specific condition using Expected Conditions.
+Frames and Windows:
+
+switch_to.frame(frame_reference) - Switch to a frame by its name, ID, or index.
+switch_to.default_content() - Switch back to the default content from a frame.
+switch_to.window(window_name) - Switch to a window by its name or handle.
+switch_to.window(driver.window_handles[-1]) - Switch to the most recently opened window.
+Alerts and Pop-ups:
+
+switch_to.alert - Switch focus to an alert pop-up.
+alert.accept() - Accept an alert (e.g., click OK).
+alert.dismiss() - Dismiss an alert (e.g., click Cancel).
+alert.send_keys(value) - Send text to a prompt alert.
